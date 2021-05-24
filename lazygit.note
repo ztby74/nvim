@@ -1,0 +1,19 @@
+e               编辑配置
+o               打开配置文件
+u               检查更新
+a               显示所有分支日志
+pgup            向上滚动主板
+pgdown          向下滚动主板
+m               视图合并
+ctrl p          查看自定义修补程序选项
+P               push 推送
+p               pull 拉取
+R               refresh 刷新
+x               open menu  打开菜单
+z               通过 reflog 撤销
+ctrl z          通过 reflog 重做
++               下频
+-               上频
+:               执行命令
+ctrl s          视图 路径过滤 选项
+W               打开差异菜单
