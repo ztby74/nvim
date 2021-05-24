@@ -1,0 +1,14 @@
+git checkout  name            qie huan  fenzhi
+git checkout -b newname       chuangjianfenzhi
+git branch                    chakan  fenzhi
+git restore  file             写入内容没有add，恢复。
+git restore --staged file     add之后，恢复add之前。
+git log --pretty=oneline      精简显示日志
+git reset --hard id号         指定恢复版本
+git reset --soft id号
+git reset --hard HEAD^        回退上一个版本
+git branch -d name            删除指定分支，但是不能在使用中删除。
+git branch -D name            强制删除一个分支。
+git tag tagname vID            给版本号打标签
+git tag -d tagname            删除标签
+.gitignore                    创建.gitignore 写上要忽略的内容
