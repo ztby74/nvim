@@ -118,3 +118,18 @@ onoremap in( :<c-u>normal! f(vi(<cr>
 
 
 
+" compile function
+noremap r :call CompileRunGcc()<CR>
+func! CompileRunGcc()
+  exec "w"
+  if &filetype == 'java'
+    set splitbelow
+                :sp
+                :res -5
+                term javac % && time java %<
+    endif
+endfunc
+
+
+
+
