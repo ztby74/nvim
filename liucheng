@@ -1,0 +1,22 @@
+sudo pacman -S base-devel cmake unzip ninja tree-sitter
+
+#nvim 0.5 install  
+git clone https://github.com/neovim/neovim --depth 1
+cd neovim
+sudo make CMAKE_BUILD_TYPE=Release install
+cd ..
+sudo rm -r neovim
+
+
+sudo pacman -S xclip python python-pip nodejs npm ripgrep fzf ranger
+
+安装护树器。要在不需要 sudo 的情况下全局安装软件包，请遵循本指南
+:https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
+
+
+npm install -g tree-sitter-cli
+
+使用 pip3 安装 ueberzug、neovim-remote 和 pynvim
+pip3 install ueberzug neovim neovim-remote pynvim --user
+
+git clone https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
